@@ -1,3 +1,28 @@
-<p>
-  home works!
-</p>
+<div class="top-tab-btns">
+  <Button class="btn" class="mat-stroked-button">Accounts </Button>
+  <Button mat-stroked-button class="mat-stroked-button"
+    >Payments and Transfers</Button
+  >
+  <Button mat-raised-button class="mat-stroked-button">Services</Button>
+  <Button mat-stroked-button class="mat-stroked-button"
+    >Settings and Transport</Button
+  >
+</div>
+
+<div class="acct-sum-title">
+  <h2>Account Summary:</h2>
+</div>
+
+<div>
+  <mat-card
+    (click)="accountClicked()"
+    class="account"
+    *ngFor="let account of accounts"
+  >
+    <label id="accountName">Account Name: {{ account.name }}</label>
+    <label id="accountTotal">Total Balance: {{ account.totalBalance }}</label>
+    <label id="accountAvail"
+      >Available Balance: {{ account.availableBalance }}</label
+    >
+  </mat-card>
+</div>

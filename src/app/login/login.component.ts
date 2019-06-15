@@ -4,11 +4,12 @@ import { Router } from "@angular/router";
 import { MatInputModule } from "@angular/material/input";
 import { MatButtonModule } from "@angular/material/button";
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatGridListModule } from "@angular/material/grid-list";
 
 @Component({
   selector: "app-login",
   templateUrl: "./login.component.html",
-  styles: []
+  styleUrls: []
 })
 export class LoginComponent implements OnInit {
   username = new FormControl("");

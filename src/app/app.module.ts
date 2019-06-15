@@ -5,12 +5,23 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { LoginComponent } from "./login/login.component";
 import { HomeComponent } from "./home/home.component";
-import { MatButtonModule, MatInputModule } from "@angular/material";
+import {
+  MatButtonModule,
+  MatInputModule,
+  MatCardModule,
+  MatListModule
+} from "@angular/material";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AccountDetailComponent } from "./account-detail/account-detail.component";
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    HomeComponent,
+    AccountDetailComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -18,7 +29,9 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
