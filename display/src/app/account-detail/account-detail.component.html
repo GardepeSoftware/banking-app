@@ -1,0 +1,16 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container" *ngIf="account != null">
+  <h1 class="page-title">{{ account.name }}</h1>
+  <div class="balances">
+    <div class="balance-icon">
+      <label>Total Balance: </label>
+      <label class="balance-amount">{{ account.totalBalance }}</label>
+    </div>
+    <div class="balance-icon">
+      <label>Available Balance: </label>
+      <br />
+      <label class="balance-amount">{{ account.availableBalance }}</label>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>Login</h1>
+  <div>
+    <input
+      class="input"
+      type="text"
+      [formControl]="username"
+      placeholder="Username"
+      pInputText
+    />
+
+    <br />
+    <input
+      class="input"
+      type="text"
+      [formControl]="password"
+      placeholder="Password"
+      pInputText
+    />
+
+    <br />
+    <br />
+
+    <button
+      id="submit-button"
+      type="button"
+      label="Submit"
+      (click)="authenticate()"
+    >
+      Submit
+    </button>
+  </div>
+</div>

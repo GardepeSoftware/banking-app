@@ -1,15 +1,14 @@
 import { Component, OnInit } from "@angular/core";
 import { FormControl } from "@angular/forms";
 import { Router } from "@angular/router";
-import { MatInputModule } from "@angular/material/input";
-import { MatButtonModule } from "@angular/material/button";
-import { MatFormFieldModule } from "@angular/material/form-field";
-import { MatGridListModule } from "@angular/material/grid-list";
+import { InputTextModule } from "primeng/inputtext";
+import { PasswordModule } from "primeng/password";
+import { ButtonModule } from "primeng/button";
 
 @Component({
   selector: "app-login",
   templateUrl: "./login.component.html",
-  styleUrls: []
+  styleUrls: ["./login.component.css"]
 })
 export class LoginComponent implements OnInit {
   username = new FormControl("");

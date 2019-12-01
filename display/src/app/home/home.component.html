@@ -1,0 +1,35 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <div class="acct-sum-title">
+    <h2>Account Summary:</h2>
+  </div>
+
+  <!-- <p-listbox id="accounts" [options]="accounts" [(ngModel)]="selectedAccount">
+  <ng-template class="account" let-account let-i="index" pTemplate="item">
+    <div (click)="openAccountDetail()">
+      <h3>Account Name: {{ account.name }}</h3>
+      <label>Available Balance: {{ account.availableBalance }}</label>
+      <br />
+      <label>Total Balance: {{ account.totalBalance }}</label>
+    </div>
+  </ng-template>
+</p-listbox> -->
+
+  <div class="accounts">
+    <div class="account" *ngFor="let account of accounts">
+      <div (click)="openAccountDetail(account.name)">
+        <div>
+          <label class="account-item">Account Name: </label>
+          <label class="account-item">{{ account.name }}</label>
+        </div>
+        <label class="account-item"
+          >Available Balance: {{ account.availableBalance }}</label
+        >
+        <br />
+        <label class="account-item"
+          >Total Balance: {{ account.totalBalance }}</label
+        >
+      </div>
+    </div>
+  </div>
+</div>

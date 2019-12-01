@@ -1,0 +1,10 @@
+.input {
+  width: 250px;
+  margin-top: 5px;
+}
+
+#submit-button {
+  background: #4a83ff;
+  color: white;
+  font-size: 16px;
+}

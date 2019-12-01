@@ -1,0 +1,19 @@
+.account {
+  border: 1px black solid;
+  padding: 10px;
+  background: #ffc34a;
+}
+
+.accounts {
+  width: 800px;
+}
+
+.account-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#container {
+  background: whitesmoke;
+}
